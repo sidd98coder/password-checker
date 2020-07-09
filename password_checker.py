@@ -27,7 +27,7 @@ def pwned_api_check(password) :
 def main(args) :
 
 ## taking the password from user to check the number of occurences whether its been used by another user
-# by cheking in the haveibeenpwned website.
+## by cheking in the haveibeenpwned website.
     for password in args :
         count = pwned_api_check(password)
         print(f'Your password \" {password} \" is hacked {count} times.')
